@@ -2,10 +2,13 @@ Koirat ei ole kissoja, mutta kissat ovat kissoja.
 
 <button type="button" onclick="Klikkaus()" >Klikkaa mua !</button>
 <h1>Koirat</h1>
+<p>Koirat on <p id="numero"> 0 </p> kertaa tyhmempiä kuin kissat </p>
+
 <script>    
      let klikkaukset = 0
      function Klikkaus(){
          klikkaukset++
+         document.getElementById("numero").innerHTML = klikkaukset- toString()
          if(klikkaukset > 25){
              alert("LOPETA")
          }
