@@ -16,10 +16,10 @@ Koirat ei ole kissoja, mutta kissat ovat kissoja.
 
 <script>    
      let klikkaukset = 0
-
+let aani = new Audio ("Male Laugh.mp3")
 
      function Klikkaus(){
-
+aani.play()
          klikkaukset++
          document.getElementById("numero").innerHTML = klikkaukset
          if(klikkaukset > 25){
