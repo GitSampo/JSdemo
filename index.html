@@ -1,8 +1,17 @@
+<head>
+    <title>Klikkailu</title>
+
+
+</head>
+
+<body
+
 Koirat ei ole kissoja, mutta kissat ovat kissoja.
 
 <button type="button" onclick="Klikkaus()" >Klikkaa mua !</button>
 <h1>Koirat on lit af </h1>
-
+<img src="Kanamuuna.png" alt="" id="munakuva">
+<p>muna</p>
 <p>Koirat on <p id="numero"> 0 </p> kertaa tyhmempiä kuin kissat </p>
 
 <script>    
@@ -13,7 +22,8 @@ Koirat ei ole kissoja, mutta kissat ovat kissoja.
 
          klikkaukset++
          document.getElementById("numero").innerHTML = klikkaukset
-         if(klikkaukset > 50){
+         if(klikkaukset > 5){
+             document.getElementById("munakuva").src = "Kanamuna rikki.png"
              alert("LOPETA JUMALAUTA TOMMONEN")
          }
      }
